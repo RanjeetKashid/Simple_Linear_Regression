@@ -1,0 +1,15 @@
+1) Calories_consumed-> predict weight gained using calories consumed
+	Answer: I think Sqrt transformation of Y varibale is the best model we can use. Because in this transformation I got the highest r value, R^2 value and lowest RMSE. 
+
+2) Delivery_time -> Predict delivery time using sorting time 
+	Answer: Here we could have used the Polynomial Transformation ( 3 degree) for which we have the highest R^2 value and lowest RMSE. But the porbability of making error on using the intercept and coefficient values is more than 0.05.
+		So, the better option would be to use the Sqrt Transformation of X variable.
+
+3) Emp_data -> Build a prediction model for Churn_out_rate 
+	Answer: Log Transformation of Y variable is a better model because in this transformation we get highest r value, R^2 value and lowest RMSE.
+
+4) Salary_hike -> Build a prediction model for Salary_hike
+	Answer: Simple Linear Regression Model is a better model because we get the highest r value, R^2 value and lowest RMSE. 
+
+
+Do the necessary transformations for input variables for getting better R^2 value for the model prepared.
