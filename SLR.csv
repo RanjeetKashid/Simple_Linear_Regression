@@ -1,0 +1,42 @@
+,,,,,,,
+Sr. No.,Output - Y,Input - X,r,Model,Function,R^2,RMSE
+QUESTION 1,,,,,,,
+1,Weight Gained ,Calories Consumed,0.9469,SLR,lm(`Weight gained (grams)`~`Calories Consumed`),0.8968,469.77
+2,Weight Gained ,sqrt(Calories Consumed),0.9255,SQRT Transformation ,lm(`Weight gained (grams)` ~ sqrt(`Calories Consumed`)),0.8567,121.71
+3,Weight Gained ,log(Calories Consumed),0.8987,Log Transformation,lm(`Weight gained (grams)` ~ log(`Calories Consumed`)),0.8077,141
+4,sqrt(Weight Gained ),Calories Consumed,0.9559,SQRT Transformation of Y Variable,lm(sqrt(`Weight gained (grams)`) ~ `Calories Consumed`),0.9139,73.75
+5,log(Weight Gained ),Calories Consumed,0.9368,Log Transformation of Y Variable,lm(log(`Weight gained (grams)`) ~ `Calories Consumed`),0.8776,118.05
+QUESTION 2,,,,,,,
+1,Delivery Time ,Sorting Time,0.8259,SLR,"lm(`Delivery Time` ~ `Sorting Time`, data = delivery_time)",0.6823,2.79
+2,Delivery Time ,sqrt(Sorting Time),0.8341,SQRT Transformation,lm(`Delivery Time` ~ sqrt(`Sorting Time`)),0.6958,2.73
+3,Delivery Time ,log(Sorting Time),0.8339,Log Transformation,lm(`Delivery Time` ~ log(`Sorting Time`)),0.6954,2.73
+4,sqrt(Delivery Time ),Sorting Time,0.839,SQRT Transformation of Y Variable,lm(sqrt(`Delivery Time`) ~ `Sorting Time`),0.704,2.85
+5,log(Delivery Time ),Sorting Time,0.8432,Log Transformation of Y Variable,lm(log(`Delivery Time`) ~ `Sorting Time`),0.7109,2.94
+6,log(Delivery Time ),"Sorting Time + 
+Sorting Time^2","0.8431, 
+0.7882",Ploynomial Transformation (2 Degree),"lm(log(`Delivery Time`) ~ `Sorting Time` + 
+I(`Sorting Time`*`Sorting Time`))",0.7649,2.79
+7,log(Delivery Time ),"Sorting Time + 
+Sorting Time^2 + 
+Sorting Time^3","0.8431, 0.7882,
+0.7317",Ploynomial Transformation (3 Degree),"lm(log(`Delivery Time`) ~ `Sorting Time` +
+ I(`Sorting Time`*`Sorting Time`) + 
+I(`Sorting Time`*`Sorting Time`*`Sorting Time`))",0.7819,2.7
+8,log(Delivery Time ),sqrt(Sorting Time),0.8647,log of Y and sqrt of x Transformation,lm(log(`Delivery Time`) ~ sqrt(`Sorting Time`)),0.7478,2.82
+9,log(Delivery Time ),log(Sorting Time),0.8787,log of Y and log of x Transformation,lm(log(`Delivery Time`) ~ log(`Sorting Time`)),0.7722,2.75
+QUESTION 3,,,,,,,
+1,Churn out rate,Salary Hike,-0.9117,SLR,"lm(Churn_out_rate ~ Salary_hike, data = emp_data)",0.8312,3.99
+2,Churn out rate,sqrt(Salary Hike),-0.9165,SQRT Transformation,lm(Churn_out_rate ~ sqrt(Salary_hike)),0.84,3.89
+3,Churn out rate,log(Salary Hike),-0.9212,Log Transformation,lm(Churn_out_rate ~ log(Salary_hike)),0.8486,3.79
+4,sqrt(Churn out rate),Salary Hike,-0.9236,SQRT Transformation of Y Variable,lm(sqrt(Churn_out_rate) ~ Salary_hike),0.853,3.75
+5,log(Churn out rate),Salary Hike,-0.9346,Log Transformation of Y Variable,lm(log(Churn_out_rate) ~ Salary_hike),0.8735,3.54
+QUESTION 4,,,,,,,
+1,Salary,YearsExperience,0.9782,SLR,lm(Salary ~ YearsExperience),0.957,5592.04
+2,Salary,sqrt(YearsExperience),0.9648,SQRT Transformation,lm(Salary ~ sqrt(YearsExperience)),0.931,7080.09
+3,Salary,log(YearsExperience),0.9241,Log Transformation,lm(Salary ~ log(YearsExperience)),0.8539,10302.89
+4,sqrt(Salary),YearsExperience,0.9746,SQRT Transformation of Y Variable,lm(sqrt(Salary) ~ YearsExperience),0.9498,5926.01
+5,log(Salary),YearsExperience,0.9654,Log Transformation of Y Variable,lm(log(Salary) ~ YearsExperience),0.932,7213.24
+,,,,,,,
+,,,,,,Legends,Colour
+,,,,,,Question,
+,,,,,,Solution,
